@@ -61,6 +61,7 @@ class GameController extends BaseController
 
         $score = new Score();
         $score->user_id = Auth::id();
+        $score->score = 0;
         $score->save();
 
         // Redirect to the game play route
@@ -129,6 +130,11 @@ class GameController extends BaseController
 
     public function leaderboard()
     {
-        return view('game::leaderboad');
+        // Fetch all scores ordered by the score column in descending order
+        $allScores = Score::orderBy('score', 'desc')->get();
+
+        // Pass the data to the view
+        return view('game::leaderboad', compact('allScores'));
     }
+
 }

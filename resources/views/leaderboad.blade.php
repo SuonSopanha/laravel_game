@@ -14,17 +14,19 @@
         <table class="w-1/2 mt-5">
             <thead>
                 <tr class="bg-green-500 w-full">
-                    <th class="px-4 py-2">Range</th>
+                    <th class="px-4 py-2">Rank</th>
                     <th class="px-4 py-2">Name</th>
                     <th class="px-4 py-2">Score</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach($allScores as $index => $score)
                 <tr class="bg-pink-200 w-full">
-                    <td class="px-4 py-2 text-center border border-gray-500">1</td>
-                    <td class="px-4 py-2 text-center border border-gray-500">Kola</td>
-                    <td class="px-4 py-2 text-center border border-gray-500">999999</td>
+                    <td class="px-4 py-2 text-center border border-gray-500">{{ $index + 1 }}</td>
+                    <td class="px-4 py-2 text-center border border-gray-500">{{ $score->user->name }}</td>
+                    <td class="px-4 py-2 text-center border border-gray-500">{{ $score->score }}</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
