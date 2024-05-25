@@ -1,17 +1,17 @@
 {
-    "name": "game/agroupnine",
+    "name": "gameaaa/agroupnine",
     "description": "laravel Rock Papper Sccissors Game",
     "type": "package",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Game\\Agroupnine\\": "src/"
+            "Gameaaa\\Agroupnine\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Game\\Agroupnine\\RockpapperscissorsServiceProvider"
+                "Gameaaa\\Agroupnine\\RockpapperscissorsServiceProvider"
             ]
         }
     },

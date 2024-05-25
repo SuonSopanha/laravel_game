@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\Agroupnine\Http\Controllers;
+namespace Gameaaa\Agroupnine\Http\Controllers;
 
 
 use App\Models\User;

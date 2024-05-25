@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Game\Agroupnine\Http\Controllers\GameController;
+use Gameaaa\Agroupnine\Http\Controllers\GameController;
 
 
 Route::middleware(['guest', 'web'])->group(function () {

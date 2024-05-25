@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\Agroupnine;
+namespace Gameaaa\Agroupnine;
 
 use Illuminate\Support\ServiceProvider;
 
