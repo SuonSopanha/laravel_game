@@ -5,7 +5,7 @@ namespace Gameaaa\Agroupnine\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Gameaa\Agroupnine\Models\Score;
+use Gameaaa\Agroupnine\Models\Score;
 use Illuminate\Contracts\Support\ValidatedData;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
@@ -57,10 +57,13 @@ class GameController extends BaseController
 
         Auth::login($user);
 
-        Score::create([
-            'user_id' => Auth::id(),
-            'score' => 0,
-        ]);
+        //create a score for the user
+
+        $score = new Score();
+        $score->user_id = Auth::id();
+        $score->save();
+
+        // Redirect to the game play route
 
         return redirect('/play'); // Redirect to the game play route
     }
