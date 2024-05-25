@@ -1,0 +1,25 @@
+{
+    "name": "game/agroupnine",
+    "description": "laravel Rock Papper Sccissors Game",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Game\\Agroupnine\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Game\\Agroupnine\\RockpapperscissorsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Suon Sopanha"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
