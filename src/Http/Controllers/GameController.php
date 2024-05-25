@@ -5,7 +5,7 @@ namespace Gameaaa\Agroupnine\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Game\Agroupnine\Models\Score;
+use Gameaa\Agroupnine\Models\Score;
 use Illuminate\Contracts\Support\ValidatedData;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as BaseController;
